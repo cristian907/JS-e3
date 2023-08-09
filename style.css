@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    color: rgb(243, 243, 243);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    color: rgb(255, 223, 41);
+    text-align: center;
+}
+
+.title-img {
+    height: 5rem;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-input {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    background-color: rgb(49, 49, 49);
+    border: none;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}
+
+.search-btn {
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 223, 41);
+    border: none;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.result-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    width: 30%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 1rem;
+    color: rgb(211, 211, 211);
+}
+
+.result-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.result-img {
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.result-price {
+    font-size: 1.8rem;
+}
+
+.error {
+    color: rgb(216, 0, 0);
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 80%;
+    }
+}
